@@ -6,6 +6,7 @@ import model from "../../lib/gemini";
 import Markdown from "react-markdown";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
+
 const NewPrompt = ({ data }) => {
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");

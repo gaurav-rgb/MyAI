@@ -13,8 +13,7 @@ const Homepage = () => {
         <h1>MY AI</h1>
         <h2>Supercharge your creativity and productivity</h2>
         <h3>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat sint
-          dolorem doloribus, architecto dolor.
+          Meet MY AI: a conversational AI designed to assist, inform, and entertain. Powered by advanced language understanding, MY AI is your personal assistant for answering questions, sparking creativity, and providing insightful conversations
         </h3>
         <Link to="/dashboard">Get Started</Link>
       </div>
