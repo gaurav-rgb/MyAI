@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "install:all": "npm install && npm run install:backend && npm run install:client",
-    "install:backend": "cd backend && npm install",
-    "install:client": "cd client && npm install",
+    "install:backend": "cd backend && npm install --force",
+    "install:client": "cd client && npm install --force",
     "start": "concurrently \"npm run start:backend\" \"npm run start:client\"",
     "start:backend": "cd backend && npm start",
     "start:client": "cd client && npm run dev"
