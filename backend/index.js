@@ -19,7 +19,7 @@ const __dirname = path.dirname(__filename);
 
 app.use(
   cors({
-    origin: '*',
+    origin: process.env.CLIENT_URL,
     credentials: true,
   })
 );
@@ -161,10 +161,10 @@ app.use((err, req, res, next) => {
 });
 
 // PRODUCTION
-app.use(express.static(path.join(__dirname, "../client")));
+app.use(express.static(path.join(__dirname, "../client/dist")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client", "index.html"));
+  res.sendFile(path.join(__dirname, "../client/dist", "index.html"));
 });
 
 app.listen(port, () => {
